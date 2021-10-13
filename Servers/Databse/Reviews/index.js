@@ -1,0 +1,17 @@
+import mongoose from "mongoose";
+
+const ReviewSchema = new mongoose.Schema({
+    food: {type: mongoose.Types.ObjectId, ref: "Foods"},
+    restaurant: {type: mongoose.Types.ObjectId, ref: "Users"},
+    user: {type: String, required: true},
+    reviewText: {type: String, required: true},
+    photos: [{
+        type: mongoose.Types.ObjectId,
+        ref: "Images"
+    }]
+},
+{
+    timestamps: true
+});
+
+export const Reviewmodel = mongoose.model("Reviews", ReviewSchema);

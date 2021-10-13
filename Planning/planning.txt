@@ -1,0 +1,44 @@
+ZOMATO PLANNING
+
+Pages
+Home
+Delivery page
+Dining out
+Nightlife Page
+
+Private Pages/Auth
+Profile
+
+Tech Stack
+MongoDb as a database
+AWS S3 as a block storage
+Open street map
+
+Planning Database:
+Orders  
+Users
+Restaurants
+Reviews
+Foods
+Menus
+Images
+
+Authentication/Authorization:
+JWT(JSON Web Token)
+
+Deployment
+Git Repo -> CICD -> AWS
+
+API Planning:
+Auth
+Foods
+Restaurant
+MenuOrder
+Payment(Razorpay)
+Reviews
+User
+Image
+
+
+
+
